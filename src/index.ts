@@ -1,9 +1,11 @@
-import { Hono } from 'hono'
+import { Hono } from "hono";
+import { loadManyHotokes } from "./reposiotry/hotoke";
 
-const app = new Hono()
+const app = new Hono();
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+app.get("/", async (c) => {
+  const hotokes = await loadManyHotokes({});
+  return c.json(hotokes);
+});
 
-export default app
+export default app;
