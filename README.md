@@ -1,8 +1,3 @@
-```
-npm install
-npm run dev
-```
+# hotoke-api
 
-```
-npm run deploy
-```
+Web API for Hotoke.
