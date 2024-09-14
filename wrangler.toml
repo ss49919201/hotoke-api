@@ -5,9 +5,10 @@ compatibility_flags = [ "nodejs_compat" ]
 # [vars]
 # MY_VAR = "my-variable"
 
-# [[kv_namespaces]]
-# binding = "MY_KV_NAMESPACE"
-# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+[[kv_namespaces]]
+binding = "hotoke"
+id = "hotoke"
+preview_id = "hotoke"
 
 # [[r2_buckets]]
 # binding = "MY_BUCKET"
@@ -16,7 +17,7 @@ compatibility_flags = [ "nodejs_compat" ]
 [[d1_databases]]
 binding = "DB"
 database_name = "hotoke"
-database_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+database_id = "hotoke"
 
 # [ai]
 # binding = "AI"
