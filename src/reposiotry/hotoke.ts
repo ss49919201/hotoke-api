@@ -8,3 +8,5 @@ export const loadManyHotokes: LoadManyHotokes = async ({ limit = 10 }) => {
     name: `Hotoke ${i + 1}`,
   }));
 };
+
+export type SaveHotoke = (hotoke: Hotoke) => Promise<void>;
